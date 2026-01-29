@@ -1,9 +1,28 @@
-HELP.md
 .gradle
-build/
+/build/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+!/ports/out/
+target/
+build/
+bin/
+.settings/
+*.log
+.doNotDelete
+nohup.out
+devops-tools/*.json
+.vscode/
+.terraform/
+*-dep.yaml
+# TEMPORARY SOLUTION! FIXME!
+terraform.tfstate*
+app-ingress.yaml
+/k8s/gke/
+/k8s/dev/
+/k8s/out/
+
+/postgis/data
+//command/ftp_data
+//command/minio_data
 
 ### STS ###
 .apt_generated
@@ -13,18 +32,14 @@ build/
 .settings
 .springBeans
 .sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
 
 ### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+/out/
+/lib
 
 ### NetBeans ###
 /nbproject/private/
@@ -32,31 +47,3 @@ out/
 /dist/
 /nbdist/
 /.nb-gradle/
-
-### VS Code ###
-.vscode/
-
-# Java
-*.class
-
-# Maven / Gradle
-target/
-build/
-.gradle/
-
-# IntelliJ IDEA
-.idea/
-*.iml
-out/
-
-# Eclipse
-.classpath
-.project
-.settings/
-
-# VS Code
-.vscode/
-
-# OS
-.DS_Store
-Thumbs.db
