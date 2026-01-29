@@ -47,3 +47,8 @@ app-ingress.yaml
 /dist/
 /nbdist/
 /.nb-gradle/
+
+.gradle/
+build/
+*.iml
+.idea/
